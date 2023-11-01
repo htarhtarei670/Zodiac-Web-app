@@ -10,7 +10,7 @@ const SignDetail = ({data}) => {
   const ctx=useContext(ZodiacContext);
   
   return (
-    <div className="mx-4 sm:mx-12 md:mx-18 lg:mx-40 py-8 ">
+    <div className="mx-4 sm:mx-12 md:mx-18 lg:mx-40 py-8">
       {/* back arrow */}
       <div className="" onClick={()=>{ctx.setIsShowDetail(false)}}>
         <i className="ri-arrow-left-line text-xl text-orange-500 font-bold"></i>

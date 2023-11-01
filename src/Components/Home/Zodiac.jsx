@@ -5,10 +5,12 @@ import Hero from "./Hero"
 
 const Zodiac = () => {
     const ctx=useContext(ZodiacContext);
+    window.scroll(top);
         
     return (
         <div className="bg-orange-50">
             {ctx.isShowDetail ? <SignDetail data={ctx.detail}/> : <Hero/>}
+            {/* <ScrollToTop smooth /> */}
 \        </div>
     )
 }
