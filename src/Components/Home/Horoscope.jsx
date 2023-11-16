@@ -1,3 +1,4 @@
+import moment from "moment/moment";
 import { useEffect } from "react";
 import { useContext } from "react";
 import { useState } from "react";
@@ -9,8 +10,11 @@ const Horoscope = () => {
   const ctx=useContext(ZodiacContext)
 
   //to get date that user put
-  const [date, setDate] = useState('')
-  const onSetDate = (event) => {
+    const today = new Date();
+  
+    const [date, setDate] = useState(today)
+    
+    const onSetDate = (event) => {
       setDate(new Date(event.target.value))
   }
 
